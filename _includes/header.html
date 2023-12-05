@@ -1,0 +1,36 @@
+  	<header>
+  		<nav class="navbar navbar-expand-sm navbar-light pt-2">
+		  <div class="container-fluid">
+		    <a class="navbar-brand" href="https://transalt.org" target="_blank">
+          <img src="https://raw.githubusercontent.com/TransportationAlternatives/projects/d101cedf544c9acd39fa87c0f00f7b4b63129b46/images/ta%20horizontal%20gray.svg" alt="TA logo" class="filter-gray d-inline-block align-middle logoHeader">
+          
+        </a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		      <i class="bi bi-list"></i>
+		    </button>
+		    <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+		      <ul class="navbar-nav">
+		        <li class="nav-item">
+		          <a class="nav-link" href="https://twitter.com/transalt" target="_blank"><i class="bi bi-twitter"></i></a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="https://facebook.com/transportationalternatives" target="_blank"><i class="bi bi-facebook"></i></a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="https://instagram.com/transportationalternatives" target="_blank"><i class="bi bi-instagram"></i></a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="https://www.linkedin.com/company/transportation-alternatives/" target="_blank"><i class="bi bi-linkedin"></i></a>
+		        </li>
+		        <li class="nav-item">
+		        	{% if page.joinlink %}
+						<a class="btn btn-primary nav-cta" href="{{ page.joinlink }}" target="_blank">Join us</a>
+					{% else %}
+		          		<a class="btn btn-primary nav-cta" href="https://transalt.org/take-action" target="_blank">Join us</a>
+		          	{% endif %}
+		        </li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+  	</header>
